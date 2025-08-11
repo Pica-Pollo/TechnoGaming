@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechnoGaming</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  
+  <!-- Archivo CSS local -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a id="inicio"></a>
+
+<header>
+  <a href="#inicio" class="logo-container">
+    <img src="Imagenes/Imagen.png" alt="Technogaming Logo" />
+    <div class="logo-text">TECHNOGAMING</div>
+  </a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#sucursales">Sucursales y Horarios</a></li>
+      <li><a href="#comentarios">Comentarios</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Swiper principal -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="Imagenes/pc1.jpg" alt="PC Gamer 1" />
+          <div class="slogan">¡Potencia sin límites!</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="Imagenes/pc2.jpg" alt="PC Gamer 2" />
+          <div class="slogan">Tu setup soñado empieza aquí</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="Imagenes/pc3.jpg" alt="PC Gamer 3" />
+          <div class="slogan">Gaming de otro nivel</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="Imagenes/pc4.jpeg" alt="PC Gamer 4" />
+          <div class="slogan">Iluminación, diseño y rendimiento</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo-section">
+    <h2>Explora el Catálogo</h2>
+    <div class="catalogo-grid">
+
+      <!-- COMPUTADORAS -->
+      <div class="catalogo-card" onclick="toggleSubmenu('submenu-pc')">
+        <img src="Imagenes/v1.jpg" alt="Computadoras" />
+        <h3>Computadoras</h3>
+        <div class="submenu-catalogo" id="submenu-pc">
+          <a href="Computadoras.html">Computadora de escritorio</a>
+          <a href="Laptops.html">Laptops</a>
+        </div>
+      </div>
+
+      <!-- CONSOLAS -->
+      <div class="catalogo-card" onclick="toggleSubmenu('submenu-consolas')">
+        <img src="Imagenes/v3.jpg" alt="Consolas" />
+        <h3>Consolas</h3>
+        <div class="submenu-catalogo" id="submenu-consolas">
+          <a href="playstation.html">PlayStation</a>
+          <a href="xbox.html">Xbox</a>
+          <a href="switch.html">Switch</a>
+        </div>
+
+  </section>
+
+ <section id="sucursales" class="sucursales-section">
+    <h2>Nuestras Sucursales</h2>
+    <div class="sucursal">
+      <h3>Santo Domingo Este</h3>
+      <p><strong>Dirección:</strong> Av. Charles de Gaulle, Santo Domingo Este</p>
+      <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a.m. a 9:00 p.m.<br>Sábados y Domingos de 8:00 a.m. a 2:00 p.m.</p>
+      <div class="mapa">
+        <img src="Imagenes/placeholder_image_url_1.jpg" alt="Mapa de Santo Domingo Este">
+      </div>
+    </div>
+
+    <div class="sucursal">
+      <h3>Santo Domingo Oeste</h3>
+      <p><strong>Dirección:</strong> Av. Las Palmas, Santo Domingo Oeste</p>
+      <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a.m. a 9:00 p.m.<br>Sábados y Domingos de 8:00 a.m. a 2:00 p.m.</p>
+      <div class="mapa">
+        <img src="Imagenes/placeholder_image_url_2.jpg" alt="Mapa de Santo Domingo Oeste">
+      </div>
+    </div>
+  </section>
+
+  <!-- Comentarios -->
+  <section id="comentarios">
+    <form>
+      <h2>Comentarios</h2>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea rows="5" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit">Enviar Comentario</button>
+    </form>
+  </section>
+</main>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Archivo JS local -->
+<script src="script.js"></script>
+
+</body>
+</html>

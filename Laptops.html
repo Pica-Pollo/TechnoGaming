@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptops - TechnoGaming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    color: #333;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+  @keyframes rainbow {
+    0%{ color: red; }
+    14%{ color: orange; }
+    28%{ color: yellow; }
+    42%{ color: green; }
+    57%{ color: blue; }
+    71%{ color: indigo; }
+    85%{ color: violet; }
+    100%{ color: red; }
+  }
+  h1 {
+    animation: rainbow 5s linear infinite;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  .logo-container img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  .logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+  }
+  .producto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  .producto img {
+    width: 120%;
+    height: 300px;
+    object-fit: cover;
+    border-radius:50px 10px 0 0;
+    margin-bottom: 50px;
+  }
+  .producto h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+  }
+  .precio {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    margin-top: auto;
+    text-align: center;
+  }
+</style>
+
+<body>
+<header>
+  <a href="index.html" class="logo-container">
+    <img src="Imagenes/Imagen.png" alt="Technogaming Logo" />
+    <div class="logo-text">TECHNOGAMING</div>
+  </a>
+</header>
+
+<main>
+  <h1>Laptops</h1>
+<section class="productos-grid">
+
+  <a href="laptop-gamer-x.html" class="producto">
+    <img src="Imagenes/Laptop Gamer X.jpg" alt="Laptop Gamer X">
+    <h2>Laptop Gamer X</h2>
+    <p class="precio">$950 USD</p>
+  </a>
+
+  <a href="laptop-ultra-speed.html" class="producto">
+    <img src="Imagenes/Laptop Ultra Speed.jpg" alt="Laptop Ultra">
+    <h2>Laptop Ultra Speed</h2>
+    <p class="precio">$1,200 USD</p>
+  </a>
+
+  <a href="laptop-rgb-pro.html" class="producto">
+    <img src="Imagenes/Laptop RGB Pro.jpg" alt="Laptop RGB">
+    <h2>Laptop RGB Pro</h2>
+    <p class="precio">$1,050 USD</p>
+  </a>
+
+  <a href="laptop-shadow-stealth.html" class="producto">
+    <img src="Imagenes/Laptop Shadow Stealth.jpg" alt="Laptop Shadow Stealth">
+    <h2>Laptop Shadow Stealth</h2>
+    <p class="precio">$880 USD</p>
+  </a>
+
+  <a href="laptop-titan-xtreme.html" class="producto">
+    <img src="Imagenes/Laptop Titan Xtreme.jpg" alt="Laptop Titan Xtreme">
+    <h2>Laptop Titan Xtreme</h2>
+    <p class="precio">$1,450 USD</p>
+  </a>
+
+  <a href="laptop-aero-slim.html" class="producto">
+    <img src="Imagenes/Laptop Aero Slim.jpg" alt="Laptop Aero Slim">
+    <h2>Laptop Aero Slim</h2>
+    <p class="precio">$780 USD</p>
+  </a>
+
+
+  </a>
+
+</section>
+</main>
+
+</body>
+</html>

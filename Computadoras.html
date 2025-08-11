@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computadoras de Escritorio - TechnoGaming</title>
+ <link rel="stylesheet" href="style.css">
+
+<style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+
+@keyframes rainbow {
+  0%{ color: red; }
+  14%{ color: orange; }
+  28%{ color: yellow; }
+  42%{ color: green; }
+  57%{ color: blue; }
+  71%{ color: indigo; }
+  85%{ color: violet; }
+  100%{ color: red; }
+}
+
+h1 {
+  animation: rainbow 5s linear infinite;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo-container img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Aquí aumenté el tamaño mínimo */
+    gap: 30px;
+  }
+
+  .producto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .producto img {
+    width: 100%;
+    height: 400px; /* Aumenté la altura */
+    object-fit: cover;
+    border-radius: 15px 10px 0 0;
+    margin-bottom: 30px;
+  }
+
+  .producto h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+  }
+
+  .precio {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    margin-top: auto;
+    text-align: center;
+  }
+</style>
+
+  
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-container">
+    <img src="Imagenes/Imagen.png" alt="Technogaming Logo" />
+    <div class="logo-text">TECHNOGAMING</div>
+  </a>
+</header>
+
+<main>
+  <h1>Computadoras de Escritorio</h1>
+  <section class="productos-grid">
+
+    <div class="producto">
+    <a href="apollo.html" style="text-decoration: none; color: inherit; display: block;">
+      <img src="Imagenes/Apollo Gaming Desktop.jpg" alt="Apollo Gaming Desktop" />
+      <h2>Apollo Gaming Desktop</h2>
+      <p class="precio">$469 USD</p>
+    </a>
+  </div>
+
+    <div class="producto">
+        <a href="msi-pc.html" class="producto">
+      <img src="Imagenes/Ultra Performance.jpg" alt="MSI PC Infinite S3" />
+      <h2>MSI PC Infinite S3</h2>
+      <p class="precio">$769 USD</p>
+        </a>
+    </div>
+
+    <div class="producto">
+        <a href="Aexpxo.html" class="producto">
+      <img src="Imagenes/PC RGB Edition.jpg" alt="PC RGB" />
+      <h2>AEXPXO PC</h2>
+      <p class="precio">$989 USD</p>
+        </a>    
+    </div>
+
+  </section>
+</main>
+
+</body>
+</html>
